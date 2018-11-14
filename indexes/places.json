@@ -1,107 +1,106 @@
+PUT places
 {
-    "mappings": {
-        "place": {
-         "properties": {
-                "housename": {
-                  "type": "string",
-                  "index": "no"
-                },
-                "city": {
-                  "type": "string",
-                  "index": "no"
-                },
-                "amenity": {
-                  "type": "string"
-                },
-                "office": {
-                  "type": "string",
-                  "index": "no"
-                },
-                "type": {
-                  "type": "string"
-                },
-                "building": {
-                  "type": "string",
-                  "index": "no"
-                },
-                "layer": {
-                  "type": "string"
-                },
-                "capacity": {
-                  "type": "string",
-                  "index": "no"
-                },
-                "ref": {
-                  "type": "string",
-                  "index": "no"
-                },
-                "quadKey": {
-                  "type": "string"
-                },
-                "osmId": {
-                  "type": "string"
-                },
-                "street": {
-                  "type": "string",
-                  "index": "no"
-                },
-                "id": {
-                  "type": "string",
-                  "index": "no"
-                },
-                "highway": {
-                  "type": "string"
-                },
-                "height": {
-                  "type": "double",
-                  "index": "no"
-                },
-                "timestamp": {
-                  "format": "yyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis",
-                  "type": "date",
-                  "index": "no"
-                },
-                "coordinates": {
-                  "type": "geo_shape"
-                },
-                "postcode": {
-                  "type": "string",
-                  "index": "no"
-                },
-                "cuisine": {
-                  "type": "string",
-                  "index": "no"
-                },
-                "volume": {
-                  "type": "double",
-                  "index": "no"
-                },
-                "material": {
-                  "type": "string",
-                  "index": "no"
-                },
-                "housenumber": {
-                  "type": "string",
-                  "index": "no"
-                },
-                "phone": {
-                  "type": "string",
-                  "index": "no"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "opening_hours": {
-                  "type": "string",
-                  "index": "no"
-                },
-                "footway": {
-                  "type": "string"
-                },
-                "location": {
-                  "type": "geo_point"
-                }
-              }
-		 }
+  "mappings": {
+    "place": {
+      "properties": {
+        "housename": {
+          "type": "text",
+          "index": false
+        },
+        "city": {
+          "type": "text"
+        },
+        "amenity": {
+          "type": "text",
+          "index": false
+        },
+        "office": {
+          "type": "text",
+          "index": false
+        },
+        "type": {
+          "type": "text"
+        },
+        "building": {
+          "type": "text",
+          "index": false
+        },
+        "layer": {
+          "type": "text"
+        },
+        "capacity": {
+          "type": "text",
+          "index": false
+        },
+        "ref": {
+          "type": "text",
+          "index": false
+        },
+        "quadKey": {
+          "type": "text"
+        },
+        "osmId": {
+          "type": "text"
+        },
+        "street": {
+          "type": "text"
+        },
+        "id": {
+          "type": "text",
+          "index": false
+        },
+        "highway": {
+          "type": "text"
+        },
+        "height": {
+          "type": "double",
+          "index": false
+        },
+        "timestamp": {
+          "format": "yyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis",
+          "type": "date",
+          "index": false
+        },
+        "coordinates": {
+          "type": "geo_shape"
+        },
+        "postcode": {
+          "type": "text"
+        },
+        "cuisine": {
+          "type": "text",
+          "index": false
+        },
+        "volume": {
+          "type": "double",
+          "index": false
+        },
+        "material": {
+          "type": "text",
+          "index": false
+        },
+        "housenumber": {
+          "type": "text",
+          "index": false
+        },
+        "phone": {
+          "type": "text",
+          "index": false
+        },
+        "name": {
+          "type": "text"
+        },
+        "opening_hours": {
+          "type": "text",
+          "index": false
+        },
+        "footway": {
+          "type": "text"
+        },
+        "location": {
+          "type": "geo_point"
+        }
+      }
     }
+  }
 }
